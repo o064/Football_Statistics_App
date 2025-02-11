@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Player Profile</title>
+ <link rel="stylesheet" 
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.cs
+s">
+ <link 
+href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=sw
+ap" rel="stylesheet">
+ <style>
+ body {
+ font-family: 'Roboto', sans-serif;
+ background-color: #111;
+ color: #eee;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ min-height: 100vh;
+ margin: 0;
+ }
+ .container {
+ display: flex;
+ justify-content: center;
+ }
+ .profile-card {
+ background-color: #222;
+ border-radius: 10px;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ padding: 30px;
+ max-width: 600px;
+ }
+ .header {
+ display: flex;
+ align-items: center;
+ margin-bottom: 30px;
+ border-bottom: 1px solid #444;
+ padding-bottom: 20px;
+ }
+ .profile-image {
+ width: 120px;
+ height: 120px;
+ border-radius: 50%;
+ margin-right: 25px;
+ object-fit: cover;
+ border: 3px solid #555;
+ }
+ .header-info h2 {
+ margin: 0;
+ font-weight: 700;
+ }
+ .header-info p {
+ color: #aaa;
+ margin-bottom: 0;
+ }
+ .details p {
+ margin-bottom: 15px;
+ line-height: 1.7;
+ }
+ .info-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+ grid-gap: 20px;
+ }
+ .info-item {
+ padding: 15px;
+ background-color: #333;
+ border-radius: 8px;
+ border: 1px solid #444;
+ }
+ .label {
+ font-weight: bold;
+ color: #ddd;
+ margin-right: 5px;
+ }
+ .buttons-container {
+ margin-top: 20px;
+ display: flex;
+ gap: 10px;
+ justify-content: center;
+ }
+ .btn {
+ font-weight: 500;
+ }
+ .edit-button {
+ background-color: #007bff;
+ border-color: #007bff;
+ }
+ .delete-button {
+ background-color: #dc3545;
+ border-color: #dc3545;
+ }
+ </style>
+</head>
+<body>
+<div class="container">
+ <div class="profile-card">
+ <div class="header">
+ <img src="profile_placeholder.jpg" alt="Profile Picture" 
+class="profile-image">
+ <div class="header-info">
+ <h2>D. Andrew</h2>
+ <p>England | Doncaster Rovers LB | J No. 3</p>
+ </div>
+ </div>
+ <div class="details">
+ <p>Danny Andrew was born on Dec 23, 1990. He is currently 28 years old 
+and plays as a Full Back for Doncaster in England. His overall rating in FIFA 
+19 is 65 with a potential of 65. Andrew has got a 2-star skillmoves rating. 
+He prefers to shoot with his left foot. His workrates are High/Medium. 
+Andrew's height is 180 cm and his weight is estimated at 72 kg according to 
+our database. Currently Danny Andrew is playing with number 3. His best stats 
+are: Stamina 74, Acceleration: 72, Sprint Speed: 70, Crossing 68, Long Pass: 
+66.</p>
+ <div class="info-grid">
+ <div class="info-item">
+ <p><span class="label">Join Date:</span> Jul 1, 2017</p>
+ <p><span class="label">Contract Exp:</span> 2019</p>
+ </div>
+ <div class="info-item">
+ <p><span class="label">Value:</span> €450K</p>
+ <p><span class="label">Wage:</span> €3K</p>
+ <p><span class="label">Release Clause:</span> €788K</p>
+ </div>
+ <div class="info-item">
+ <p><span class="label">International Reputation:</span> 1</p>
+ <p><span class="label">Skill Moves:</span> 2</p>
+ <p><span class="label">Weak Foot:</span> 2</p>
+ <p><span class="label">Preferred Foot:</span> Left</p>
+ </div>
+ </div>
+ <div class="buttons-container">
+ <button class="btn btn-primary edit-button" data-playerid="123">Edit</button>
+ <button class="btn btn-danger delete-button" data-playerid="123">Delete</button>
+ <button class="btn btn-secondary view-stats-button" data-playerid="123">View Stats</button>
+ <button class="btn btn-info view-media-button" data-playerid="123">View Media</button>
+ </div>
+ </div>
+ </div>
+</div>
+<script>
+ const editButtons = document.querySelectorAll('.edit-button');
+ editButtons.forEach(button => {
+ button.addEventListener('click', () => {
+ const playerId = button.dataset.playerId;
+ console.log('Edit clicked for player ID:', playerId);
+ // TODO: Implement edit logic (e.g., redirect to edit page)
+ });
+ });
+ const deleteButtons = document.querySelectorAll('.delete-button');
+ deleteButtons.forEach(button => {
+ button.addEventListener('click', () => {
+ const playerId = button.dataset.playerId;
+ console.log('Delete clicked for player ID:', playerId);
+ // TODO: Implement delete logic (e.g., confirmation, API call)
+ });
+ });
+ const viewStatsButtons = document.querySelectorAll('.view-stats-button');
+ viewStatsButtons.forEach(button => {
+ button.addEventListener('click', () => {
+ const playerId = button.dataset.playerId;
+ console.log('View Stats clicked for player ID:', playerId);
+ // TODO: Implement view stats logic (e.g., modal, new page)
+ });
+ });
+ const viewMediaButtons = document.querySelectorAll('.view-media-button');
+ viewMediaButtons.forEach(button => {
+ button.addEventListener('click', () => {
+ const playerId = button.dataset.playerId;
+ console.log('View Media clicked for player ID:', playerId);
+ // TODO: Implement view media logic (e.g., modal, gallery)
+ });
+ });
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script 
+src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js
+"></script>
+<script 
+src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+</script>
+</body>
+</html

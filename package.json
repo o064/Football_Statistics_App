@@ -1,0 +1,30 @@
+{
+  "name": "football_statistics_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/o064/Football_Statistics_App.git"
+  },
+  "author": "omar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/o064/Football_Statistics_App/issues"
+  },
+  "homepage": "https://github.com/o064/Football_Statistics_App#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.10.0",
+    "validator": "^13.12.0"
+  }
+}
