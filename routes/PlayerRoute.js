@@ -1,8 +1,5 @@
 const express = require('express');
 const route = express.Router();
-const authControler = require("../controllers/userController");
-
-route.post("/login",authControler.logIn_post);
 
 
 route.get("/:id/",(req,res) => res.send("OK"));
