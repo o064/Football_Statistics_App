@@ -17,14 +17,14 @@ mongoose.connect(process.env.MONGO_URI)
     ).catch(err => console.error("MongoDB Connection Error:", err));
 // middleware
 app.use(express.json());
-
 // routes
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'index.html'));
 });
-app.use("/player", PlayerRoute);
-app.use("/team", TeamRoute);
-app.use("/stats", StatsRoute);
+
+app.use("/api/players", PlayerRoute);
+app.use("/api/teams", TeamRoute);
+app.use("/api/stats", StatsRoute);
 // 404 not found page
 app.use((req, res) => {
     res.status(404).json({

@@ -1,9 +1,10 @@
 const express = require('express');
-const route = express.Router();
+const router = express.Router();
+const playerController = require('../controllers/PlayerController');
 
+router.get('/:id?', playerController.getPlayer); // Get single/all players
+router.post('/', playerController.createPlayer); // add  player
+router.put('/:id', playerController.updatePlayer); // Update player
+router.delete('/:id', playerController.deletePlayer); // Delete player
 
-route.get("/:id/",(req,res) => res.send("OK"));
-route.put("/:id",(req,res) => res.send("OK"));
-route.delete("/:id",(req,res) => res.send("OK"));
-
-module.exports = route;
+module.exports = router;
