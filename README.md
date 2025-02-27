@@ -45,7 +45,7 @@ This project is a Football Statistics API built using Node.js, Express, and Mong
 │── .env
 │── .gitignore
 │── package.json
-│── server.js
+│── app.js
 │── README.md
 ```
    
