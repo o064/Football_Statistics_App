@@ -1,14 +1,6 @@
 # Football Statistics API
 
 This project is a Football Statistics API built using Node.js, Express, and MongoDB. It provides routes for managing player statistics and team data.
-## Technology
-- MongoDb
-- NodeJs
-
-## FrameWork
-- express
-- mongoose
-  
 
 ## Installation
 
@@ -29,6 +21,33 @@ This project is a Football Statistics API built using Node.js, Express, and Mong
    npm start
    ```
 
+## Project Structure
+```
+/football-statistics-app
+│── /controllers
+│   ├── PlayerController.js
+│   ├── StatsController.js
+│   ├── TeamController.js
+│
+│── /models
+│   ├── Player.js
+│   ├── Stats.js
+│   ├── Team.js
+│
+│── /routes
+│   ├── PlayerRoute.js
+│   ├── StatsRoute.js
+│   ├── TeamRoute.js
+│
+│── /views
+│   ├── index.html
+│
+│── .env
+│── .gitignore
+│── package.json
+│── server.js
+│── README.md
+```
    
 ## Project Visualization
 ![image](https://github.com/user-attachments/assets/e5d0f4e8-724b-4c37-a44d-0105643130d8)
@@ -55,9 +74,6 @@ This project is a Football Statistics API built using Node.js, Express, and Mong
 ### Stats Routes
 - **GET** `/api/stats/player/:id` - Get player statistics by ID
 - **POST** `/api/stats` - Add new statistics
-
-
-
 
 ## Technologies Used
 - **Node.js** - Backend runtime
