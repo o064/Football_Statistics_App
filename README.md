@@ -53,13 +53,13 @@ This project is a Football Statistics API built using Node.js, Express, and Mong
 ![image](https://github.com/user-attachments/assets/e5d0f4e8-724b-4c37-a44d-0105643130d8)
 
 ## models
-![image](https://github.com/user-attachments/assets/4a2776e9-8100-4337-aab5-5ba5cda8f41c)
+![image](https://github.com/user-attachments/assets/3411de11-b8d6-43cd-9dc8-84a7a5586f22)
+
 
 ## API Routes
 
 ### Player Routes
-![image](https://github.com/user-attachments/assets/3411de11-b8d6-43cd-9dc8-84a7a5586f22)
-
+![image](https://github.com/user-attachments/assets/4a2776e9-8100-4337-aab5-5ba5cda8f41c)
 - **GET** `/api/players/:id` - Get player statistics by ID
 - **POST** `/api/players` - Create a new player
 - **PUT** `/api/players/:id` - Update player data
